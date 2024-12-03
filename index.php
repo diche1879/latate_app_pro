@@ -12,7 +12,7 @@
 
 <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
-        <a class="logo" href="index.php?view=home">LaTaTe</a>
+        <a class="logo" href="index.php?view=home">LaTaTe<span class="logospan"><sub> PRO</sub></span></a>
 
         <div class="navbar-end">
             <div class="navbar-item">
