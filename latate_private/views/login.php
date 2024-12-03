@@ -1,5 +1,12 @@
-<div class="main-container">
-
+<div class="main-container main-conatiner-dos">
+    <a href="../index.php" class="back-arrow">
+        <p>Go Back</p>
+        <img src="../img/back_112351.svg" alt="back-arrow">
+    </a>
+    <header class="prime">
+        <h2>LaTaTe</h2>
+        <h1>PRIVATE ACCESS</h1>
+    </header>
     <form class="box login" action="" method="POST" autocomplete="off">
         <h5 class="title is-5 has-text-centered is-uppercase">Sign In</h5>
 

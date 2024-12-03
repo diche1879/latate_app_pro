@@ -8,7 +8,7 @@
 <body>
     <h1>Welcome to Latate-Pro</h1>
     <a href="latate_private">Private</a>
-    <a href="#">Clients</a>
+    <a href="latate_clients">Clients</a>
     
 </body>
 </html>

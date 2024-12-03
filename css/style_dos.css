@@ -1,0 +1,43 @@
+header{
+    text-align: center;
+}
+
+header.prime h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: darkgoldenrod;
+}
+
+header.prime h2{
+    color: rgb(186, 138, 16);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.main-conatiner-dos{
+    flex-direction: column;
+}
+.back-arrow{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: darkgoldenrod;
+    font-size: 1.3rem;
+    border: 2px solid darkgoldenrod;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.back-arrow:hover{
+    background-color: rgb(193, 159, 74);
+    color: white;
+}
+.back-arrow img{
+    width: 30px;
+    height: 30px;
+}
