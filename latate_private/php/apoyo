@@ -1,0 +1,24 @@
+<?php
+$id = cleanString($_GET['order_id_down']);
+
+$check_order = conection();
+$check_order = $check_order->query("SELECT * FROM orders WHERE id_order = '$id'");
+
+if ($check_order->rowCount() > 0) {
+    $order_data = $check_order->fetch();
+    $pdf_filename = $order_data['order_pdf'];
+    $pdf_file = "./pdf/" . $pdf_filename;
+
+    if (file_exists($pdf_file)) {
+        header('Content-Type: application/pdf');
+        header('Content-Disposition: attachment; filename="' . basename($pdf_file) . '"');
+        header('Content-Length: ' . filesize($pdf_file));
+        readfile($pdf_file);
+        exit;
+    } else {
+        echo "El archivo PDF no existe.";
+    }
+} else {
+    echo "Orden no encontrada.";
+}
+$check_order = null;

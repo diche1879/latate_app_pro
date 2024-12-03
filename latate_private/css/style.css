@@ -1,0 +1,251 @@
+:root {
+    --bulma-skeleton-background: white;
+    --bulma-input-background-l: 100%;
+    --bulma-navbar-background-color: #F8F3E4;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--bulma-skeleton-background);
+}
+
+
+nav.navbar {
+    /* --bulma-navbar-background-color: #F8F3E4; */
+    background-color: var(--bulma-navbar-background-color);
+    background-color: #F8F3E4;
+}
+
+div.navbar-brand {
+    background-color: #F8F3E4;
+}
+
+h1.title {
+    color: #775003;
+}
+
+h2.subtitle {
+    color: rgb(188, 146, 41);
+    font-weight: bold;
+}
+
+a.logo {
+    font-size: 3rem;
+    padding: .5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(51, 37, 2);
+    font-weight: 500;
+    margin: 0 2rem;
+}
+
+a.navbar-link{
+    color: #775003;
+}
+
+table.table{
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+tr.has-text-centered th{
+    color: #252525;
+}
+
+.table td, .table th, .table tr {
+    color: #252525;
+    border-color: #ffffff;
+    border-radius: 5px;
+}
+
+td a.button.is-info, a.button.is-link{
+   margin: 8px 0;
+   background-color: rgb(178, 181, 208);
+   color: #252525;
+}
+
+td a.button{
+    font-size: .85rem;
+}
+
+tbody tr:nth-child(odd) td{
+    background-color: #F8F3E4;
+}
+thead tr,tbody tr:nth-child(even) td{
+    background-color: #f3eee1;
+}
+
+.navbar-link:not(.is-arrowless):hover,
+.navbar-dropdown,
+.navbar-dropdown a {
+    background-color: #F8F3E4;
+    color: #252525;
+    margin-right: 1rem;
+}
+
+.navbar-dropdown a.navbar-item:not(.is-active, .is-selected) {
+    background-color: #F8F3E4;
+    border-bottom: .5px solid rgb(186, 186, 186);
+    color: rgb(46, 46, 46);
+}
+
+.navbar-dropdown a.navbar-item:not(.is-active, .is-selected):hover {
+    background-color: #fffcf5;
+}
+
+.navbar-link {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    color: rgb(150, 150, 150);
+}
+
+.navbar-link:not(.is-arrowless):after,
+.select:not(.is-multiple):not(.is-loading):after {
+    border: .125em solid #996500;
+    border-right: 0;
+    border-top: 0;
+    content: " ";
+    display: block;
+    height: .625em;
+    margin-top: -.4375em;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    transition-duration: var(--bulma-duration);
+    transition-property: border-color;
+    width: .625em;
+}
+
+.button.is-rounded.in {
+    background-color: #996500;
+    border: none;
+}
+
+.button.is-rounded.out {
+    background-color: #b8a276;
+    border: none;
+}
+
+.button.is-rounded.in:hover {
+    background-color: #775003;
+}
+
+.button.is-rounded.out:hover {
+    background-color: #9a8865;
+}
+
+.button.is-info {
+    background-color: rgb(141, 112, 50);
+    color: #F8F3E4;
+    border-radius: 999px;
+}
+
+.button.is-success{
+    background-color: rgb(141, 237, 193);
+    margin: .5rem 0;
+}
+.button.is-danger{
+    background-color: rgb(239, 160, 144);
+    margin: .5rem 0;
+}
+
+
+.navbar-burger {
+    color: #996500;
+    width: 4rem;
+
+}
+
+.navbar-burger:hover {
+    background-color: transparent;
+    border: 1px solid #996500;
+
+}
+
+
+
+.navbar-burger span {
+    width: 2rem;
+    left: calc(100% -(var(--bulma-burger-item-width)) / 2);
+}
+
+/* ESTILOS LOGIN.PHP */
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+}
+
+.box,
+.hero-body {
+    height: auto;
+    width: 100%;
+    max-width: 40%;
+    min-width: 300px;
+    background-color: #F8F3E4;
+}
+
+.hero-body {
+    min-width: 60%;
+    min-height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.title.is-5,
+.label,
+p.title {
+    color: #996500;
+}
+
+p.subtitle {
+    font-size: 2rem;
+    color: gray;
+}
+
+button.button.is-info.is-rounded {
+    background-color: #996500;
+    color: #F8F3E4;
+    font-size: 1.2rem;
+}
+
+button.button.is-info.is-rounded:hover {
+    background-color: #775003;
+}
+
+.form-inline {
+    display: inline-flex;
+}
+
+input.input {
+    background-color: #fffefb;
+    color: black;
+}
+
+div.content{
+    color: black;
+}
+div.content p strong{
+    color: #775003;
+}
+
+.requireds{
+    font-size: 1rem;
+    font-style: normal;
+    color: rgb(183, 5, 5);
+    font-weight: 900;
+}
